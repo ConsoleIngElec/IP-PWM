@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar  6 17:33:07 2026
+# Process ID: 17028
+# Current directory: C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent8140 C:\Users\cmbouba\Mes_projets_pour_le_stage\IP PWM\IP PWM.xpr
+# Log file: C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/vivado.log
+# Journal file: C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/IP PWM.xpr}
+WARNING: [Board 49-69] Validation failed for board file C:/Xilinx/Vivado/2018.3/data/boards/board_files/k24_io_dk_carrier/1.0/board.xml:
+ Component Sub Type should be ddr/switch/push_button/lcd/led/ethernet/sfp/sma/mux/reset/system_reset/uart/mgt_clock/system_clock/memory_flash_qspi/memory_flash_bpi/memory/dimm/pmod/fmc_hpc/fmc_lpc/fmc_plus/pcie/fixed_io/chip for avnet-tria:k24_io_dk_carrier:som_connectors:1.0
+
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2018.3/data/boards/board_files/k24_io_dk_carrier/1.0/board.xml
+WARNING: [Board 49-69] Validation failed for board file C:/Xilinx/Vivado/2018.3/data/boards/board_files/k24_io_dk_som/1.0/board.xml:
+ Component Sub Type should be ddr/switch/push_button/lcd/led/ethernet/sfp/sma/mux/reset/system_reset/uart/mgt_clock/system_clock/memory_flash_qspi/memory_flash_bpi/memory/dimm/pmod/fmc_hpc/fmc_lpc/fmc_plus/pcie/fixed_io/chip for avnet-tria:k24_io_dk_som:som_connectors:1.0
+
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2018.3/data/boards/board_files/k24_io_dk_som/1.0/board.xml
+WARNING: [Board 49-69] Validation failed for board file C:/Xilinx/Vivado/2018.3/data/boards/board_files/ve2302_io_dk_carrier/1.0/board.xml:
+ Component Sub Type should be ddr/switch/push_button/lcd/led/ethernet/sfp/sma/mux/reset/system_reset/uart/mgt_clock/system_clock/memory_flash_qspi/memory_flash_bpi/memory/dimm/pmod/fmc_hpc/fmc_lpc/fmc_plus/pcie/fixed_io/chip for avnet-tria:ve2302_io_dk_carrier:jx1_connector:1.0
+
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2018.3/data/boards/board_files/ve2302_io_dk_carrier/1.0/board.xml
+WARNING: [Board 49-69] Validation failed for board file C:/Xilinx/Vivado/2018.3/data/boards/board_files/ve2302_io_dk_som/1.0/board.xml:
+ Component Sub Type should be ddr/switch/push_button/lcd/led/ethernet/sfp/sma/mux/reset/system_reset/uart/mgt_clock/system_clock/memory_flash_qspi/memory_flash_bpi/memory/dimm/pmod/fmc_hpc/fmc_lpc/fmc_plus/pcie/fixed_io/chip for avnet-tria:ve2302_io_dk_som:jx1_connector:1.0
+
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2018.3/data/boards/board_files/ve2302_io_dk_som/1.0/board.xml
+WARNING: [Board 49-69] Validation failed for board file C:/Xilinx/Vivado/2018.3/data/boards/board_files/zub1cg/1.2/board.xml:
+ Component Sub Type should be ddr/switch/push_button/lcd/led/ethernet/sfp/sma/mux/reset/system_reset/uart/mgt_clock/system_clock/memory_flash_qspi/memory_flash_bpi/memory/dimm/pmod/fmc_hpc/fmc_lpc/fmc_plus/pcie/fixed_io/chip for avnet-tria:zuboard_1cg:hsio_std_j6:1.2
+
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2018.3/data/boards/board_files/zub1cg/1.2/board.xml
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/PWM_simple_tb_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.

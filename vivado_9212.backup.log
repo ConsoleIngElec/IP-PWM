@@ -1,0 +1,109 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar  6 17:15:44 2026
+# Process ID: 9212
+# Current directory: C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12896 C:\Users\cmbouba\Mes_projets_pour_le_stage\IP PWM\IP PWM.xpr
+# Log file: C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/vivado.log
+# Journal file: C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/IP PWM.xpr}
+WARNING: [Board 49-69] Validation failed for board file C:/Xilinx/Vivado/2018.3/data/boards/board_files/k24_io_dk_carrier/1.0/board.xml:
+ Component Sub Type should be ddr/switch/push_button/lcd/led/ethernet/sfp/sma/mux/reset/system_reset/uart/mgt_clock/system_clock/memory_flash_qspi/memory_flash_bpi/memory/dimm/pmod/fmc_hpc/fmc_lpc/fmc_plus/pcie/fixed_io/chip for avnet-tria:k24_io_dk_carrier:som_connectors:1.0
+
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2018.3/data/boards/board_files/k24_io_dk_carrier/1.0/board.xml
+WARNING: [Board 49-69] Validation failed for board file C:/Xilinx/Vivado/2018.3/data/boards/board_files/k24_io_dk_som/1.0/board.xml:
+ Component Sub Type should be ddr/switch/push_button/lcd/led/ethernet/sfp/sma/mux/reset/system_reset/uart/mgt_clock/system_clock/memory_flash_qspi/memory_flash_bpi/memory/dimm/pmod/fmc_hpc/fmc_lpc/fmc_plus/pcie/fixed_io/chip for avnet-tria:k24_io_dk_som:som_connectors:1.0
+
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2018.3/data/boards/board_files/k24_io_dk_som/1.0/board.xml
+WARNING: [Board 49-69] Validation failed for board file C:/Xilinx/Vivado/2018.3/data/boards/board_files/ve2302_io_dk_carrier/1.0/board.xml:
+ Component Sub Type should be ddr/switch/push_button/lcd/led/ethernet/sfp/sma/mux/reset/system_reset/uart/mgt_clock/system_clock/memory_flash_qspi/memory_flash_bpi/memory/dimm/pmod/fmc_hpc/fmc_lpc/fmc_plus/pcie/fixed_io/chip for avnet-tria:ve2302_io_dk_carrier:jx1_connector:1.0
+
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2018.3/data/boards/board_files/ve2302_io_dk_carrier/1.0/board.xml
+WARNING: [Board 49-69] Validation failed for board file C:/Xilinx/Vivado/2018.3/data/boards/board_files/ve2302_io_dk_som/1.0/board.xml:
+ Component Sub Type should be ddr/switch/push_button/lcd/led/ethernet/sfp/sma/mux/reset/system_reset/uart/mgt_clock/system_clock/memory_flash_qspi/memory_flash_bpi/memory/dimm/pmod/fmc_hpc/fmc_lpc/fmc_plus/pcie/fixed_io/chip for avnet-tria:ve2302_io_dk_som:jx1_connector:1.0
+
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2018.3/data/boards/board_files/ve2302_io_dk_som/1.0/board.xml
+WARNING: [Board 49-69] Validation failed for board file C:/Xilinx/Vivado/2018.3/data/boards/board_files/zub1cg/1.2/board.xml:
+ Component Sub Type should be ddr/switch/push_button/lcd/led/ethernet/sfp/sma/mux/reset/system_reset/uart/mgt_clock/system_clock/memory_flash_qspi/memory_flash_bpi/memory/dimm/pmod/fmc_hpc/fmc_lpc/fmc_plus/pcie/fixed_io/chip for avnet-tria:zuboard_1cg:hsio_std_j6:1.2
+
+CRITICAL WARNING: [Board 49-56] Problem parsing board file - C:/Xilinx/Vivado/2018.3/data/boards/board_files/zub1cg/1.2/board.xml
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/PWM_simple_tb_behav.wcfg'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/IP PWM.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'PWM_variable_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/IP PWM.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj PWM_variable_tb_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/IP PWM.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.3
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 734aeebd04ea4eacb0b8e77ef963d41b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot PWM_variable_tb_behav xil_defaultlib.PWM_variable_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.PWM_variable [\PWM_variable(pwm_freq_hz=100000...]
+Compiling architecture behavioral of entity xil_defaultlib.pwm_variable_tb
+Built simulation snapshot PWM_variable_tb_behav
+
+****** Webtalk v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/cmbouba/Mes_projets_pour_le_stage/IP -notrace
+couldn't read file "C:/Users/cmbouba/Mes_projets_pour_le_stage/IP": permission denied
+INFO: [Common 17-206] Exiting Webtalk at Fri Mar  6 17:16:17 2026...
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/PWM_simple_tb_behav.wcfg
+WARNING: [USF-XSim-17] WCFG file does not exist:C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/PWM_simple_tb_behav.wcfg
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/IP PWM.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "PWM_variable_tb_behav -key {Behavioral:sim_1:Functional:PWM_variable_tb} -tclbatch {PWM_variable_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+source PWM_variable_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'PWM_variable_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 944.035 ; gain = 0.000
+run all
+run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 944.035 ; gain = 0.000
+set_property top PWM_variable [current_fileset]
+update_compile_order -fileset sources_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri Mar  6 17:33:03 2026...

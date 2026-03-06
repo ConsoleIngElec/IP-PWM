@@ -1,6 +1,6 @@
 Vivado Simulator 2018.3
 Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 734aeebd04ea4eacb0b8e77ef963d41b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot PWM_simple_tb_behav xil_defaultlib.PWM_simple_tb -log elaborate.log 
+Running: C:/Xilinx/Vivado/2018.3/bin/unwrapped/win64.o/xelab.exe -wto 734aeebd04ea4eacb0b8e77ef963d41b --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot PWM_variable_tb_behav xil_defaultlib.PWM_variable_tb -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
@@ -11,6 +11,6 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.PWM_simple [\PWM_simple(pwm_freq_hz=10000000...]
-Compiling architecture behavioral of entity xil_defaultlib.pwm_simple_tb
-Built simulation snapshot PWM_simple_tb_behav
+Compiling architecture behavioral of entity xil_defaultlib.PWM_variable [\PWM_variable(pwm_freq_hz=100000...]
+Compiling architecture behavioral of entity xil_defaultlib.pwm_variable_tb
+Built simulation snapshot PWM_variable_tb_behav

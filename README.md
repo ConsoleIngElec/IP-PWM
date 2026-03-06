@@ -17,3 +17,8 @@ Il est conçu pour être utilisé dans un **Block Design Vivado** sur les FPGA A
 Le module a été validé par simulation. On observe un rapport cyclique de 50% (5 cycles hauts pour 5 cycles bas à une fréquence de 10MHz).
 
 ![Simulation PWM](doc/PWM_simple_tb.png)
+
+## Simulation du PWM Variable
+Voici le chronogramme obtenu lors de la simulation (25%, 50% et 75%) :
+
+![Simulation PWM Variable](doc/PWM_variable.png)

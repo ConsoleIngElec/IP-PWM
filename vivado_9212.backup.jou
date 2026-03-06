@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Mar  6 17:15:44 2026
+# Process ID: 9212
+# Current directory: C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12896 C:\Users\cmbouba\Mes_projets_pour_le_stage\IP PWM\IP PWM.xpr
+# Log file: C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/vivado.log
+# Journal file: C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/IP PWM.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source PWM_variable_tb.tcl
+run all
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top PWM_variable [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close_sim
