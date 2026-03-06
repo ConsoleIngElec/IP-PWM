@@ -22,3 +22,18 @@ Le module a été validé par simulation. On observe un rapport cyclique de 50% 
 Voici le chronogramme obtenu lors de la simulation (25%, 50% et 75%) :
 
 ![Simulation PWM Variable](doc/PWM_variable.png)
+
+## 📈 Validation par Simulation
+Le bon fonctionnement du module a été vérifié par un Testbench simulant 3 canaux avec des rapports cycliques différents.
+
+### Scénario de test :
+1. **Initialisation** : Reset actif (`nReset = '0'`), toutes les sorties sont à 0.
+2. **Rapports cycliques** :
+   - Canal 0 : **10%** (Duty = 25)
+   - Canal 1 : **50%** (Duty = 128)
+   - Canal 2 : **90%** (Duty = 230)
+3. **Changement dynamique** : Inversion des valeurs en cours de simulation pour vérifier la réactivité.
+
+### Résultat obtenu :
+![Simulation PWM Multi-Canaux](doc/PWM_multi_channels.png)
+On observe une synchronisation parfaite des fronts montants, validant l'utilisation du compteur partagé.
