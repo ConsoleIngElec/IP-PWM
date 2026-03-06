@@ -1,0 +1,18 @@
+# --- Dossiers générés par Vivado ---
+*.cache/
+*.hw/
+*.runs/
+*.tmp/
+*.ip_user_files/
+*.gen/
+*.srcs/
+
+# --- Fichiers de log et journaux ---
+*.jou
+*.log
+*.str
+*.txt
+.Xil/
+
+# --- Dossiers de simulation ---
+*.sim/
