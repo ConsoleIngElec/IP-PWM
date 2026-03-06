@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../IP PWM.srcs/sources_1/new/PWM_center_aligned.vhd" \
+"../../../../IP PWM.srcs/sim_1/new/PWM_center_aligned_tb.vhd" \
+
+# Do not sort compile order
+nosort

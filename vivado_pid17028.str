@@ -2089,3 +2089,83 @@ selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Untitle
 // TclEventType: WAVEFORM_UPDATE_WAVEFORM
 // HMemoryUtils.trashcanNow. Engine heap size: 867 MB. GUI used memory: 89 MB. Current time: 3/6/26, 6:14:49 PM CET
 // TclEventType: WAVEFORM_UPDATE_WAVEFORM
+// TclEventType: WAVEFORM_CLOSE_WCFG
+// Elapsed time: 409 seconds
+closeView(RDIResource.RDIViews_WAVEFORM_VIEWER, "Untitled 1"); // w
+// TclEventType: SIMULATION_UPDATE_OBJECT_TREE
+unmaximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // O (aF, cp)
+// PAResourceOtoP.PAViews_OBJECTS: Objects: close view
+// Elapsed time: 11 seconds
+selectButton(PAResourceCommand.PACommandNames_ADD_SOURCES, "Sources_add_sources"); // B (f, cp)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// c (cp): Add Sources: addNotify
+selectRadioButton(PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN, "Add or create design sources"); // a (o, c)
+selectButton("NEXT", "Next >"); // JButton (j, c)
+selectButton(PAResourceQtoS.SrcChooserPanel_CREATE_FILE, "Create File"); // a (C, c)
+// F (c): Create Source File: addNotify
+// Elapsed time: 41 seconds
+setText(PAResourceAtoD.CreateSrcFileDialog_FILE_NAME, "PWM_center_aligned"); // Y (Q, F)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+dismissDialog("Create Source File"); // F (c)
+selectButton("FINISH", "Finish"); // JButton (j, c)
+// 'h' command handler elapsed time: 48 seconds
+dismissDialog("Add Sources"); // c (cp)
+// Tcl Message: close [ open {C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/IP PWM.srcs/sources_1/new/PWM_center_aligned.vhd} w ] 
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: add_files {{C:/Users/cmbouba/Mes_projets_pour_le_stage/IP PWM/IP PWM.srcs/sources_1/new/PWM_center_aligned.vhd}} 
+// I (cp): Define Module: addNotify
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 0, (String) null, 0); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Clk", 0, "Port Name", 0); // ab (Q, I)
+// Elapsed time: 36 seconds
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "nReset", 1, "Port Name", 0); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "nReset ; in ; false ; 0 ; 0", 1, "nReset", 0); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 2, (String) null, 0); // ab (Q, I)
+// Elapsed time: 10 seconds
+applyEnter(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, (String) null); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Duty", 2, "Port Name", 0); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 3, (String) null, 0); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Duty ; in ; false ; 0 ; 0", 2, "Duty", 0); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Duty_In", 2, "Port Name", 0); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, " ; in ; false ; 0 ; 0", 3, (String) null, 0); // ab (Q, I)
+// Elapsed time: 14 seconds
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "PWM_Out", 3, "Port Name", 0); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "PWM_Out ; in ; false ; 0 ; 0", 3, "in", 1); // ab (Q, I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "out", 3, "Direction", 1); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Duty_In ; in ; false ; 0 ; 0", 2, "false", 2); // ab (Q, I)
+selectTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "Duty_In ; in ; true ; 0 ; 0", 2, "0", 3); // ab (Q, I)
+// HMemoryUtils.trashcanNow. Engine heap size: 905 MB. GUI used memory: 88 MB. Current time: 3/6/26, 6:23:53 PM CET
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (I)
+editTable(PAResourceAtoD.DefineModulesDialog_DEFINE_MODULES_AND_SPECIFY_IO_PORTS, "7", 2, "MSB", 3); // ab (Q, I)
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 905 MB (+20548kb) [00:50:44]
+// TclEventType: FILE_SET_CHANGE
+dismissDialog("Define Module"); // I (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_center_aligned(Behavioral) (PWM_center_aligned.vhd)]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, PWM_center_aligned(Behavioral) (PWM_center_aligned.vhd)]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+selectCodeEditor("PWM_center_aligned.vhd", 628, 287); // cl (w, cp)
+selectCodeEditor("PWM_center_aligned.vhd", 634, 334); // cl (w, cp)
+typeControlKey((HResource) null, "PWM_center_aligned.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("PWM_center_aligned.vhd", 355, 625); // cl (w, cp)
+selectCodeEditor("PWM_center_aligned.vhd", 111, 659); // cl (w, cp)
+typeControlKey((HResource) null, "PWM_center_aligned.vhd", 'c'); // cl (w, cp)
+// Elapsed time: 57 seconds
+selectCodeEditor("PWM_center_aligned.vhd", 274, 278); // cl (w, cp)
+selectCodeEditor("PWM_center_aligned.vhd", 182, 322); // cl (w, cp)
+selectCodeEditor("PWM_center_aligned.vhd", 71, 299); // cl (w, cp)
+typeControlKey((HResource) null, "PWM_center_aligned.vhd", 'c'); // cl (w, cp)
+// Elapsed time: 35 seconds
+typeControlKey((HResource) null, "PWM_center_aligned.vhd", 'v'); // cl (w, cp)
+// Elapsed time: 12 seconds
+selectCodeEditor("PWM_center_aligned.vhd", 242, 281); // cl (w, cp)
+typeControlKey((HResource) null, "PWM_center_aligned.vhd", 'v'); // cl (w, cp)
+typeControlKey((HResource) null, "PWM_center_aligned.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("PWM_center_aligned.vhd", 504, 362); // cl (w, cp)
+// Elapsed time: 11 seconds
+typeControlKey((HResource) null, "PWM_center_aligned.vhd", 'c'); // cl (w, cp)
+selectCodeEditor("PWM_center_aligned.vhd", 624, 270); // cl (w, cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE

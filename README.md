@@ -26,14 +26,35 @@ Voici le chronogramme obtenu lors de la simulation (25%, 50% et 75%) :
 ## 📈 Validation par Simulation
 Le bon fonctionnement du module a été vérifié par un Testbench simulant 3 canaux avec des rapports cycliques différents.
 
-### Scénario de test :
-1. **Initialisation** : Reset actif (`nReset = '0'`), toutes les sorties sont à 0.
-2. **Rapports cycliques** :
-   - Canal 0 : **10%** (Duty = 25)
-   - Canal 1 : **50%** (Duty = 128)
-   - Canal 2 : **90%** (Duty = 230)
-3. **Changement dynamique** : Inversion des valeurs en cours de simulation pour vérifier la réactivité.
+### 📈 Validation par Simulation (Multi-Canaux)
 
-### Résultat obtenu :
+Le bon fonctionnement de l'IP PWM Multi-Canaux a été vérifié par un Testbench simulant 3 sorties indépendantes avec des rapports cycliques variés.
+
+#### **Scénario de test :**
+1. **Initialisation** : Application d'un Reset actif à l'état bas (`nReset = '0'`). On vérifie que toutes les sorties sont forcées à '0' pour la sécurité du système.
+2. **Rapports cycliques configurés** :
+   - Canal 0 : **10%** (Valeur Duty : 25)
+   - Canal 1 : **50%** (Valeur Duty : 128)
+   - Canal 2 : **90%** (Valeur Duty : 230)
+3. **Changement dynamique** : Modification des valeurs `Duty_In` en cours de simulation pour valider la réactivité instantanée du module sans glitch.
+
+#### **Résultat obtenu :**
 ![Simulation PWM Multi-Canaux](doc/PWM_multi_channels.png)
-On observe une synchronisation parfaite des fronts montants, validant l'utilisation du compteur partagé.
+
+**Analyse :** La simulation confirme une synchronisation parfaite des fronts montants entre les différents canaux. Cela valide l'architecture à **compteur partagé**, qui permet une économie significative de ressources logiques (LUT) sur le FPGA.
+
+---
+
+### 🟢 Validation par Simulation (Center-Aligned)
+
+La simulation du module **Center-Aligned** démontre une précision accrue dans la génération du signal, indispensable pour les applications de mécatronique.
+
+#### **Scénario de test :**
+1.  **Initialisation** : Le signal `nReset` à '0' garantit que la sortie `PWM_Out` reste inactive au démarrage.
+2.  **Génération Triangulaire** : Observation du compteur interne (Up-Down) pour valider la forme d'onde symétrique.
+3.  **Rapport cyclique** : Test à un rapport cyclique de **~31%** (Duty = 80) pour vérifier le centrage de l'impulsion par rapport à la période.
+
+#### **Résultat obtenu :**
+![Simulation PWM Center-Aligned](doc/PWM_center_aligned_sim.png)
+
+**Analyse :** Contrairement au mode classique (Edge-Aligned), l'impulsion est parfaitement centrée au milieu du cycle. Cette symétrie permet de réduire les harmoniques de courant, prolongeant ainsi la durée de vie des moteurs pilotés et diminuant les perturbations électromagnétiques (EMI).
